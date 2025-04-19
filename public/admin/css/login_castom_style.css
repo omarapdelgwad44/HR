@@ -1,0 +1,82 @@
+body.login-page {
+    background: url('../images/retrosupply-jLwVAUtLOAQ-unsplash.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Playfair Display', serif;
+    color: #5e4b3c;
+  }
+
+  .login-box {
+    background: rgba(255, 250, 240, 0.92);
+    border-radius: 16px;
+    padding: 35px;
+    box-shadow: 0 8px 30px rgba(94, 75, 60, 0.25);
+    backdrop-filter: blur(4px);
+  }
+
+  .login-logo a {
+    color: #6b4f3b;
+    font-size: 2.2rem;
+    font-weight: bold;
+  }
+
+  .login-box-msg {
+    font-size: 1.1rem;
+    color: #6b4f3b;
+    font-style: italic;
+  }
+
+  .form-control {
+    border-radius: 8px;
+    border: 1px solid #d3c0ad;
+    background-color: #fefaf5;
+    color: #5e4b3c;
+  }
+
+  .form-control:focus {
+    border-color: #c7a17a;
+    box-shadow: 0 0 0 2px rgba(199, 161, 122, 0.2);
+  }
+
+  .btn-primary {
+    background-color: #a67c52;
+    border-color: #8b5e3c;
+    color: #fff;
+  }
+
+  .btn-primary:hover {
+    background-color: #8b5e3c;
+    border-color: #7a4e32;
+  }
+
+  .btn-danger {
+    background-color: #c94c4c;
+    border-color: #a33d3d;
+  }
+
+  .btn-danger:hover {
+    background-color: #a33d3d;
+    border-color: #872f2f;
+  }
+
+  .btn-facebook {
+    background-color: #4b70a8;
+    border-color: #3b5998;
+  }
+
+  .btn-facebook:hover {
+    background-color: #3b5998;
+  }
+
+  .icheck-primary > input:checked + label::before {
+    background-color: #a67c52;
+    border-color: #a67c52;
+  }
+
+  a {
+    color: #a67c52;
+  }
+
+  a:hover {
+    text-decoration: underline;
+    color: #7a4e32;
+  }

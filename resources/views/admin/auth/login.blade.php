@@ -3,8 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>AdminLTE 3 | Log in</title>
-  <!-- Tell the browser to be responsive to screen width -->
+  <title>HrMS | Login</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Font Awesome -->
@@ -13,17 +12,19 @@
   <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
   <!-- icheck bootstrap -->
   <link rel="stylesheet" href="{{ asset('admin/plugins/icheck-bootstrap/icheck-bootstrap.min.css') }}">
-  <!-- Theme style -->
+  <!-- AdminLTE -->
   <link rel="stylesheet" href="{{ asset('admin/dist/css/adminlte.min.css') }}">
-  <!-- Google Font: Source Sans Pro -->
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+  <!-- Custom Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+
+  <!-- Custom Style -->
+  <link rel="stylesheet" href="{{ asset('admin/css/login_castom_style.css') }}">
 </head>
 <body class="hold-transition login-page">
 <div class="login-box">
   <div class="login-logo">
-    <a href="{{ route('admin.dashboard') }}"><b>Admin</b>LTE</a>
+    <a href="{{ route('admin.dashboard') }}"><b>Hr</b>MS</a>
   </div>
-  <!-- /.login-logo -->
   <div class="card">
     <div class="card-body login-card-body">
         @if (session('error'))
@@ -40,7 +41,8 @@
                 </ul>
             </div>
         @endif
-      <p class="login-box-msg">Sign in to start your session</p>
+
+      <p class="login-box-msg">Welcome back! Please sign in to continue.</p>
 
       <form action="{{ route('admin.login') }}" method="post">
         @csrf
@@ -64,46 +66,33 @@
           <div class="col-8">
             <div class="icheck-primary">
               <input type="checkbox" id="remember">
-              <label for="remember">
-                Remember Me
-              </label>
+              <label for="remember">Remember Me</label>
             </div>
           </div>
-          <!-- /.col -->
-          <div class="col-4">
+          <div class="col-12 text-center">
             <button type="submit" class="btn btn-primary btn-block btn-flat">Sign In</button>
           </div>
-          <!-- /.col -->
         </div>
       </form>
 
       <div class="social-auth-links text-center mb-3">
         <p>- OR -</p>
-        <a href="#" class="btn btn-block btn-primary">
+        <a href="#" class="btn btn-block btn-facebook text-white">
           <i class="fab fa-facebook mr-2"></i> Sign in using Facebook
         </a>
         <a href="#" class="btn btn-block btn-danger">
-          <i class="fab fa-google-plus mr-2"></i> Sign in using Google+
+          <i class="fab fa-google mr-2"></i> Sign in using Google
         </a>
       </div>
-      <!-- /.social-auth-links -->
 
-      <p class="mb-1">
-        <a href="#">I forgot my password</a>
-      </p>
-      <p class="mb-0">
-        <a href="register.html" class="text-center">Register a new membership</a>
-      </p>
+      <p class="mb-1"><a href="#">I forgot my password</a></p>
+      <p class="mb-0"><a href="register.html" class="text-center">Register a new membership</a></p>
     </div>
-    <!-- /.login-card-body -->
   </div>
 </div>
-<!-- /.login-box -->
 
-<!-- jQuery -->
+<!-- Scripts -->
 <script src="{{ asset('admin/plugins/jquery/jquery.min.js') }}"></script>
-<!-- Bootstrap 4 -->
 <script src="{{ asset('admin/plugins/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
-
 </body>
 </html>

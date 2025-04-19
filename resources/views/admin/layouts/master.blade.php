@@ -36,9 +36,9 @@
       <div class="container-fluid">
         @yield('content')
       </div><!-- /.container-fluid -->
-    </div>
-    <!-- /.content -->
-  </div>
+    </div><!-- /.content -->
+  </div><!-- /.content-wrapper -->
+
   <!-- Control Sidebar -->
   <aside class="control-sidebar control-sidebar-dark">
     <div class="p-3">
@@ -46,14 +46,15 @@
       <p>Sidebar content</p>
     </div>
   </aside>
+  <!-- /.control-sidebar -->
 
   <!-- Main Footer -->
-  <footer class="content-wrapper">
+  <footer class="main-footer">
     {{-- <div class="float-right d-none d-sm-inline">Anything you want</div>
     <strong>Copyright &copy; 2014-2019
       <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved. --}}
   </footer>
-</div>
+</div><!-- /.wrapper -->
 
 @include('admin.layouts.footerjs')
 </body>
