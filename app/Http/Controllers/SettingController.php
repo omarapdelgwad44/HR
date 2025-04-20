@@ -52,9 +52,12 @@ class SettingController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Setting $setting)
+    public function update(Request $request)
     {
-        //
+        $setting = Setting::where('company_code', Auth::guard('admin')->user()->company_code)->first();
+        $setting->update($request->all());
+        // dd($setting);
+        return redirect()->route('admin.setting.index')->with('success', 'Setting updated successfully');
     }
 
     /**

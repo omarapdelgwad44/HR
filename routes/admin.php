@@ -12,6 +12,7 @@ Route::prefix('dashboard')->group(function () {
 
     // Setting
     Route::get('setting', [SettingController::class, 'index'])->name('admin.setting.index');
+    Route::post('setting/update', [SettingController::class, 'update'])->name('admin.setting.update');
 });
 
 

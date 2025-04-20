@@ -7,7 +7,7 @@
             <h5 class="mb-0"><i class="fas fa-cog mr-2"></i>Company Settings</h5>
         </div>
         <div class="card-body">
-            <form action="#" method="post" enctype="multipart/form-data">
+            <form action="{{ route('admin.setting.update') }}" method="post" enctype="multipart/form-data">
                 @csrf
                 <div class="row">
                     <div class="col-md-6">
